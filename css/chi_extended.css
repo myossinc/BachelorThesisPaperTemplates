@@ -1,0 +1,56 @@
+@media print, screen{
+	body 					{width:  23.495cm; margin:auto; text-align: center; font-family: "Verdana"; font-size: 8.5pt;}
+	h1, h2, h3				{margin-top:0;}
+	h1, h2					{font-weight: bold;}
+	h2, h3					{font-family: "Verdana";margin-bottom:0; text-align: left; }
+	h1						{font-family: "Helvetica", "Arial"; margin-bottom: 50pt; text-align: right; font-size: 24pt; clear: both;}
+	h2						{font-size: 9.5pt}
+	h3						{font-size: 8.5pt; font-style:italic; font-weight: normal;}
+	p						{margin-top:0; text-align: left; line-height:12pt;}
+	ol						{margin-top:0; padding-top:0; padding-left: 0;text-align: left; line-height:12pt;  list-style-position: inside; list-style-type: none;} 
+	ul						{margin-top:0; padding-top:0; padding-left: 0;text-align: left; line-height:12pt; list-style: square;  list-style-position: inside;}
+	li						{margin-left: 0.425cm; margin-bottom: 8pt;}
+	hr						{width: 8.5cm; border-style: solid; border-width: 0.02cm; text-align: left;}
+	div						{page-break-inside:avoid; margin:0; padding: 0;}
+	body > hr:first-child	{width: 15.6cm; border-style: solid; border-width: 0.08cm; text-align: right; margin-bottom: 0; float: right;}
+	h1 + div > div > div > p			{font-size: 7.5pt; float: left; }
+	h1 + div > div > div > p + p		{font-size: 7.5pt; float: right;}
+	h1 + div > div > div > p + p + p		{font-size: 7.5pt; float: left;}
+	h1 + div > div > div > p + p + p + p		{font-size: 7.5pt; float: right;}
+	h1 + div > div > div > p + p + p + p + p		{font-size: 7.5pt; float: left;}
+	h1 + div > div > div > p + p + p + p + p + p		{font-size: 7.5pt; float: right;}
+	h1 + div > div > div > p + p + p + p + p + p + p		{font-size: 7.5pt; float: left;}
+	h1 + div > div > div > p + p + p + p + p + p + p + p		{font-size: 7.5pt; float: right;}
+	code					{text-align : left;}
+	table					{border-collapse :collapse; text-align: left;}
+	img						{margin-top: 12pt; margin-bottom: 12pt;}
+	img:first-child			{margin-top:0;}
+	th						{font-weight: bold; text-align: center; border-width : 2px; border-style: solid; padding: 4px;}
+	td						{text-align: center; border-width : 2px; border-style: solid; padding: 4px;}
+	cite					{font-style: normal;}
+	.figCaption				{font-size: 7.5pt; text-align: left; margin-bottom: 8.5pt; line-height:12pt;}
+	.figCaption:before		{font-weight: bold; content: "figure " counter(figCounter) ". "; counter-increment: figCounter;}
+	.tabCaption				{font-size: 7.5pt; text-align: left; line-height:12pt;}
+	.tabCaption:before		{font-weight: bold; content: "table " counter(tabCounter) ". "; counter-increment: tabCounter;}
+	.footnote				{font-size: 7.5pt; text-align: left; line-height:12pt;}
+	.footnote:before		{vertical-align: super; font-size: 7.5pt; content: counter(footCounter) "  "; counter-increment: footCounter;}
+	.copyrightBox			{font-family: "Verdana"; font-size: 7pt; text-align:left; line-height:12pt; clear:both;}/* margin-bottom: 12pt;*/
+	.leftMargin				{float: left; width: 5cm; margin-top: 2.5cm;}
+	.rightMargin			{float: right; width: 4.5cm; margin-top: 2.5cm;}
+	.author:first-line		{font-weight: bold;}
+	.fullPageImg			{page-break-after:always; clear:both;}
+}
+@media print{
+	a						{color:black; text-decoration: none;}
+	}
+@media screen{
+	img						{display:block; margin:auto;}
+	table					{margin:auto;}
+	code					{margin:auto;}
+	math					{margin:auto;}
+	.abstract				{clear:both;}
+	.figCaption				{margin:auto; text-align : center;}
+	.tabCaption				{margin:auto; text-align : center;}
+	.mathCaption			{margin:auto; text-align : center;}
+	}
+@page						{margin-top: 2.54cm; margin-bottom: 1.28cm; margin-left:2.5cm; margin-right:1.905cm; padding: 0;}
