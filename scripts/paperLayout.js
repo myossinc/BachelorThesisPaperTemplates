@@ -21,7 +21,8 @@
    	GNU General Public License.
     More info at: http://sourceforge.net/projects/jsbibtex/  
    	BibTex-0.1.2.js is copyright 2008 Steve Hannah. 
- */
+   	*/
+ /*
 var paperLayout = {
     container : [],
 	getDpi : function(){
@@ -1820,4 +1821,54 @@ var run = function() {
 	paperLayout.createPaper("print");
 	//paperLayout.createPaper("screen");
 	};
+window.addEventListener("load", run, true);
+*/
+
+var paperLayout = {
+	createDocument : function(){
+		this.getTitle();
+		this.getAbstract();
+		this.getKeywords();
+		this.getACMKeywords();
+	},
+
+	getTitle : function(){
+		var title = document.getElementsByTagName('title')[0].text;
+		document.getElementById('title-text').innerHTML = title;
+	},
+
+	getAbstract : function(){
+		var metas = document.getElementsByTagName('meta'); 
+
+		for (i = 0; i < metas.length; i++) { 
+			if (metas[i].getAttribute('name') == 'abstract') {
+				document.getElementById('abstract-text').innerHTML = metas[i].getAttribute('content');
+			} 
+		}
+	},
+
+	getKeywords : function() {
+		var keywords = document.getElementsByTagName('meta');
+		for (i = 0; i < keywords.length; i++) { 
+			if (keywords[i].getAttribute('name') == 'keywords') {
+				document.getElementById('keywords').innerHTML = keywords[i].getAttribute('content');
+			} 
+		}
+	},
+
+	getACMKeywords : function() {
+		var acm = document.getElementsByTagName('meta');
+		for (i = 0; i < acm.length; i++) { 
+			if (acm[i].getAttribute('name') == 'acm-keywords') {
+				document.getElementById('keywords').innerHTML = acm[i].getAttribute('content');
+			} 
+		}
+	}
+}
+
+
+
+var run = function() {
+	paperLayout.createDocument();
+};
 window.addEventListener("load", run, true);
