@@ -10,8 +10,8 @@
 	ol						{margin-top:0; padding-top:0; padding-left: 0;text-align: left; line-height:12pt;  list-style-position: inside; list-style-type: none;} 
 	ul						{margin-top:0; padding-top:0; padding-left: 0;text-align: left; line-height:12pt; list-style: square;  list-style-position: inside;}
 	li						{margin-left: 0.425cm; margin-bottom: 8pt;}
-	hr						{width: 8.5cm; border-style: solid; border-width: 0.02cm; text-align: left;}
-	div						{page-break-inside:avoid; margin:0; padding: 0;}
+	hr						{width: 8.5cm; border-style: solid; border-width: 0.08cm; text-align: left;}
+/*	div						{page-break-inside:avoid; margin:0; padding: 0;}
 	body > hr:first-child	{width: 15.6cm; border-style: solid; border-width: 0.08cm; text-align: right; margin-bottom: 0; float: right;}
 	h1 + div > div > div > p			{font-size: 7.5pt; float: left; }
 	h1 + div > div > div > p + p		{font-size: 7.5pt; float: right;}
@@ -34,7 +34,7 @@
 	.tabCaption:before		{font-weight: bold; content: "table " counter(tabCounter) ". "; counter-increment: tabCounter;}
 	.footnote				{font-size: 7.5pt; text-align: left; line-height:12pt;}
 	.footnote:before		{vertical-align: super; font-size: 7.5pt; content: counter(footCounter) "  "; counter-increment: footCounter;}
-	.copyrightBox			{font-family: "Verdana"; font-size: 7pt; text-align:left; line-height:12pt; clear:both;}/* margin-bottom: 12pt;*/
+	.copyrightBox			{font-family: "Verdana"; font-size: 7pt; text-align:left; line-height:12pt; clear:both;}/* margin-bottom: 12pt;
 	.leftMargin				{float: left; width: 5cm; margin-top: 2.5cm;}
 	.rightMargin			{float: right; width: 4.5cm; margin-top: 2.5cm;}
 	.author:first-line		{font-weight: bold;}
@@ -53,4 +53,5 @@
 	.tabCaption				{margin:auto; text-align : center;}
 	.mathCaption			{margin:auto; text-align : center;}
 	}
+*/
 @page						{margin-top: 2.54cm; margin-bottom: 1.28cm; margin-left:2.5cm; margin-right:1.905cm; padding: 0;}
